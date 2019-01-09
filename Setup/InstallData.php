@@ -35,14 +35,13 @@ class InstallData implements InstallDataInterface
     public function install(ModuleDataSetupInterface $setup, ModuleContextInterface $context)
     {
         $eavSetup = $this->eavSetupFactory->create();
-
         $eavSetup->addAttribute(
             \Magento\Catalog\Model\Product::ENTITY,
-            'specs_list',
+            'specs',
             [
                 'group' => 'General',
                 'type' => 'text',
-                'label' => 'Parameters',
+                'label' => 'Additional Info',
                 'input' => 'text',
                 'source' => '',
                 'frontend' => '',
