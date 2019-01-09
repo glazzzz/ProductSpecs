@@ -39,7 +39,7 @@ class InstallData implements InstallDataInterface
             \Magento\Catalog\Model\Product::ENTITY,
             'capacity',
             [
-                'group' => 'General',
+                'group' => 'Content',
                 'type' => 'text',
                 'label' => 'Capacity',
                 'input' => 'text',
