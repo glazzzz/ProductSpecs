@@ -38,11 +38,11 @@ class InstallData implements InstallDataInterface
 
         $eavSetup->addAttribute(
             \Magento\Catalog\Model\Product::ENTITY,
-            'specs',
+            'specs_list',
             [
                 'group' => 'General',
                 'type' => 'text',
-                'label' => 'Specs',
+                'label' => 'Parameters',
                 'input' => 'text',
                 'source' => '',
                 'frontend' => '',
